@@ -1,0 +1,51 @@
+
+div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 30px;
+  white-space: nowrap;
+  font-family: monospace;
+}
+
+.names {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+img {
+  border-radius: 150px;
+  width: 300px;
+}
+
+span {
+  display: block;
+  font-size:20px;
+  font-family: monospace;
+  white-space: nowrap;
+  border-right: 2px solid;
+  width: 18ch;
+
+  animation: typing 2s steps(19) , blink 0.5s infinite step-end alternate;
+  overflow: hidden;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  
+}
+
+@keyframes blink {
+  50% {
+    border-color:transparent;
+  }
+}
