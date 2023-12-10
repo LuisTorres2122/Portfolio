@@ -1,0 +1,45 @@
+section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 1000px;
+}
+div {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
+ 
+}
+
+svg {
+  width: 100px;
+  view-timeline-name: --svg;
+  view-timeline-axis: block;
+  animation-timeline: --svg;
+  animation-name: show ;
+  animation-range: entry 25% cover 50%;
+  animation-fill-mode: both;
+}
+
+
+.mysqlSVG{
+  background-color: white;
+  border-radius: 100%;
+}
+
+
+
+@keyframes show{
+  from{
+    opacity: 0;
+    scale:15%;
+  }
+
+  to{
+    opacity: 1;
+    scale:100%;
+  }
+}
+

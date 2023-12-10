@@ -1,15 +1,15 @@
-
-div {
+.home {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   gap: 50px;
   height: 100vh;
+  width: 1000px;
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 40px;
   white-space: nowrap;
   font-family: monospace;
 }
@@ -25,15 +25,57 @@ img {
   width: 300px;
 }
 
+.divs {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  cursor: pointer;
+}
+
+svg {
+  width: 35px;
+  transition: ease 0.5s;
+}
+
+svg:hover {
+  scale: 110%;
+}
+
+.informationBar {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  cursor: pointer;
+  text-align: center;
+  width: 60px;
+  font-family: monospace;
+  font-size: large;
+  border: solid white 2px;
+  border-radius: 10px;
+  padding: 2px;
+  color: rgb(20, 94, 158);
+  transition: ease 0.5s;
+  font-weight: bolder;
+}
+button:hover {
+  scale: 120%;
+  font-weight: bold;
+}
+
 span {
   display: block;
-  font-size:20px;
+  font-size: 20px;
   font-family: monospace;
   white-space: nowrap;
   border-right: 2px solid;
   width: 18ch;
 
-  animation: typing 2s steps(19) , blink 0.5s infinite step-end alternate;
+  animation: typing 2s steps(19), blink 0.5s infinite step-end alternate;
   overflow: hidden;
 }
 
@@ -41,11 +83,10 @@ span {
   from {
     width: 0;
   }
-  
 }
 
 @keyframes blink {
   50% {
-    border-color:transparent;
+    border-color: transparent;
   }
 }
