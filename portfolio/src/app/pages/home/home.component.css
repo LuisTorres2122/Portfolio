@@ -66,7 +66,6 @@ button:hover {
   scale: 120%;
   font-weight: bold;
 }
-
 span {
   display: block;
   font-size: 20px;
@@ -74,14 +73,20 @@ span {
   white-space: nowrap;
   border-right: 2px solid;
   width: 18ch;
-
-  animation: typing 2s steps(19), blink 0.5s infinite step-end alternate;
   overflow: hidden;
+}
+
+.animated {
+  animation: typing 3s steps(19) forwards,
+    blink 0.5s infinite step-end alternate;
 }
 
 @keyframes typing {
   from {
     width: 0;
+  }
+  to {
+    width: 18ch;
   }
 }
 
@@ -89,4 +94,46 @@ span {
   50% {
     border-color: transparent;
   }
+}
+
+.not-animated {
+  animation: untyping 3s steps(19) forwards,
+    blink 0.5s infinite step-start alternate;
+}
+
+@keyframes untyping {
+  from {
+    width: 18ch;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    height: 100vh;
+    width: 500px;
+  }
+  
+  h1 {
+    font-size: 30px;
+    white-space: wrap;
+    font-family: monospace;
+  }
+  
+  .names {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+  }
+  
+  
 }

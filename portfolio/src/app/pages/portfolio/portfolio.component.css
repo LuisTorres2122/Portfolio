@@ -60,7 +60,7 @@ img {
 }
 
 .svgRotate.flipped {
-  transform: rotateZ(180deg)
+  transform: rotateZ(180deg);
 }
 
 .imgContainer.flipped {
@@ -141,4 +141,55 @@ a {
 
 .typescript {
   width: 80px;
+}
+
+@media (max-width: 768px) {
+  section {
+    width: 500px;
+    height: min-content;
+  }
+
+  .card {
+    width: 300px;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .imgDiv {
+    width: 300px;
+    perspective: 300px;
+  }
+
+  p {
+    width: 300px;
+    height: 140px;
+  }
+
+  h3 {
+    margin: 0;
+    font-size: large;
+    width: 200px;
+  }
+
+
+
+  a {
+    width: 65px;
+    background-color: rgb(82, 82, 82);
+    color: white;
+    font-size: small;
+    border-radius: 15px;
+    padding: 5px 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2px;
+    justify-content: space-evenly;
+  }
+
+ 
 }

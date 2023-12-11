@@ -1,11 +1,11 @@
-section{
+section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: justify;
-    height: 100vh;
-    width: 1000px;
+  height: 100vh;
+  width: 1000px;
 }
 
 .container {
@@ -14,9 +14,9 @@ section{
   justify-content: center;
   align-items: center;
   text-align: justify;
-  }
+}
 
-.text{
+.text {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -26,11 +26,30 @@ section{
   font-size: large;
 }
 
-span{
+span {
   font-weight: bold;
 }
 
-img{
+img {
   width: 500px;
 }
-  
+
+@media (max-width: 768px) {
+  section {
+    width: 500px;
+    height: min-content;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .text {
+    width: 300px;
+  }
+
+  img {
+    width: 300px;
+    padding: 0;
+  }
+}

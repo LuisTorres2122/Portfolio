@@ -13,6 +13,8 @@ div {
  
 }
 
+
+
 svg {
   width: 100px;
   view-timeline-name: --svg;
@@ -22,6 +24,7 @@ svg {
   animation-range: entry 25% cover 50%;
   animation-fill-mode: both;
 }
+
 
 
 .mysqlSVG{
@@ -43,3 +46,33 @@ svg {
   }
 }
 
+@media (max-width: 768px) {
+  section {
+    width: 500px;
+  }
+  div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+   
+  }
+  
+  
+  
+  svg {
+    width: 70px;
+    view-timeline-name: --svg;
+    view-timeline-axis: block;
+    animation-timeline: --svg;
+    animation-name: show ;
+    animation-range: entry 25% cover 50%;
+    animation-fill-mode: both;
+  }
+  
+  
+  
+  .mysqlSVG{
+    background-color: white;
+    border-radius: 100%;
+  }
+}
