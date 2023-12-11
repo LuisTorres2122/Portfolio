@@ -6,7 +6,7 @@ import { Component, HostListener } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'portfolio';
+  title = 'Luis Torres';
   sections = ['home', 'about', 'skills', 'portfolio', 'contact'];
   currentSection: string = 'home';
 

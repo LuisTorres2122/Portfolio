@@ -3,7 +3,7 @@
     <h1>Luis Josué Torres Bautista</h1>
     <span id="text" [ngClass]="{'animated': isAnimated, 'not-animated': !isAnimated}" >Software Developer </span>
     <div class="informationBar">
-      <button>CV</button>
+      <button (click)="dowloadPdf()">CV</button>
       <div class="divs">
         <a href="https://github.com/LuisTorres2122" target="_blank">
           <svg

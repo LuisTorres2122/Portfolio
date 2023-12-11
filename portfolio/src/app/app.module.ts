@@ -7,6 +7,7 @@ import { AboutComponent } from './pages/about/about.component';
 import { SkillsComponent } from './pages/skills/skills.component';
 import { PortfolioComponent } from './pages/portfolio/portfolio.component';
 import { HomeComponent } from './pages/home/home.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -19,7 +20,8 @@ import { HomeComponent } from './pages/home/home.component';
     HomeComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,4 +1,5 @@
 import { Component, ElementRef, Renderer2 } from '@angular/core';
+import { PDFService } from 'src/services/pdf.service';
 
 @Component({
   selector: 'app-home',
@@ -6,10 +7,9 @@ import { Component, ElementRef, Renderer2 } from '@angular/core';
   styleUrls: ['./home.component.css'],
 })
 export class HomeComponent {
-
   isAnimated = true;
 
-  constructor(private el: ElementRef, private renderer: Renderer2) {}
+  constructor(private pdfService: PDFService, private el: ElementRef) {}
 
   ngOnInit(): void {
     const animatedText = this.el.nativeElement.querySelector('#text');
@@ -21,5 +21,9 @@ export class HomeComponent {
         this.isAnimated = !this.isAnimated;
       }, 3000);
     });
+  }
+
+  dowloadPdf(): void {
+    this.pdfService.descargarPDF('../../../assets/Currículum Vitae CV.pdf');
   }
 }
