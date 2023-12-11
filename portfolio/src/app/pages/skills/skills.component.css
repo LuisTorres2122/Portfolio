@@ -48,7 +48,7 @@ svg {
 
 @media (max-width: 768px) {
   section {
-    width: 500px;
+    width: 100%;
   }
   div {
     display: grid;

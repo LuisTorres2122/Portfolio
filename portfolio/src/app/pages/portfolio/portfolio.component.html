@@ -33,12 +33,14 @@
             <img
               *ngIf="imgLacentral"
               class="img1"
+              loading="lazy"
               src="../../../assets/portfolio/HomeLaCentral.png"
               alt="landing page"
             />
             <img
               *ngIf="!imgLacentral"
               class="img2"
+              loading="lazy"
               src="../../../assets/portfolio/ERPLaCentral.png"
               alt="ERP"
             />
@@ -87,7 +89,7 @@
         </div>
         <div class="textContent">
           <div class="descripcion">
-            <h4>Descripcion</h4>
+            <h4>Descripción</h4>
             <p *ngIf="!imgLacentral">
               En el apartado de ERP maneja los mantenimientos necesarios para el
               funcionamiento del sistema, al igual que procesos como creación de
@@ -644,11 +646,13 @@
               *ngIf="imgLavid"
               class="img1"
               src="../../../assets/portfolio/HomeLaVid.png"
+              loading="lazy"
               alt="landing page"
             />
             <img
               *ngIf="!imgLavid"
               class="img2"
+              loading="lazy"
               src="../../../assets/portfolio/ERPLaVid.png"
               alt="ERP"
             />
@@ -697,7 +701,7 @@
         </div>
         <div class="textContent">
           <div class="descripcion">
-            <h4>Descripcion</h4>
+            <h4>Descripción</h4>
             <p *ngIf="!imgLavid">
               En el apartado de ERP posee la gestión de miembros de la iglesia
               donde lo principal es el cambio de miembros activos y no activos,
